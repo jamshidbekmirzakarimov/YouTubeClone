@@ -30,13 +30,13 @@ const Card = () => {
             </Link>
           </div>
           <div className='flex items-center pt-2'>
+            <div className="canalBox">
             <img
-              className='rounded-full'
+              className='canalImg'
               src={i.video.thumbnails[0].url}
               alt='img'
-              width='40px'
-              height='40px'
-            />
+              />
+              </div>
             <Link to={`/${i?.video.author.title}`} className='ps-3'>
               {i?.video.author.title}
             </Link>

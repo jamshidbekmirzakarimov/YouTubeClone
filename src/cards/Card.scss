@@ -1,7 +1,4 @@
 
-.cart {
- 
-}
        ::-webkit-scrollbar {
         width: 4px;
     }
@@ -30,6 +27,19 @@
     border-radius: 14px;
     height: 150px;
     margin: 0;
+}
+
+.canalBox{
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.canalImg{
+    width: 50px;
+    height: 50px;
 }
 @media screen and (max-width:576px) {
     .wrapper{
