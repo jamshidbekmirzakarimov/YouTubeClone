@@ -16,9 +16,7 @@ import "./Saidbar.scss";
 const Saidbar = () => {
   const { togle } = useContext(MyContext);
   const [open, setOpen] = useState(false);
-  const openFun = () => {
-    setOpen(!open);
-  };
+
   return (
     <>
       {!togle ? (

@@ -58,7 +58,7 @@ const Useparam = () => {
           </div>
           <div className="pt-5">
             {data.slice(16, 90).map((i, el) => (
-              <div key={el} className="pb-10 flex justify-center">
+              <div key={el} className="pb-10">
                 <div className="">
                   <Link to={`/${i?.video.author.title}`} className={``}>
                     <img
@@ -68,13 +68,13 @@ const Useparam = () => {
                     />
                   </Link>
                   <div className="flex items-center pt-3">
+                    <div className="useparamLeftImg">
                     <img
-                      className="bord block"
+                      className="useparamImgA"
                       src={i.video.thumbnails[0].url}
-                      width="35px"
-                      height="45px"
                       alt="img"
                     />
+                   </div>
                     <Link>{i.video.author.title}</Link>
                   </div>
                 </div>
