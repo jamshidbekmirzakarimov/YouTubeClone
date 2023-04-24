@@ -16,13 +16,13 @@ const Potpis = () => {
             />
           </Link>
           <div className='flex items-center pt-3'>
+            <div className="subsBox">
             <img
-              className='bord block'
+              className='subsBoxImg'
               src={i.video.thumbnails[0].url}
-              width='35px'
-              height='45px'
               alt='img'
-            />
+              />
+              </div>
             <Link>{i.video.author.title}</Link>
           </div>
         </div>
