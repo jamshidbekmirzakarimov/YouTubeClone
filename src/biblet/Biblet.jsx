@@ -2,6 +2,7 @@ import { MyContext } from "../context/Context";
 import { memo, useContext } from "react";
 import { Link } from "react-router-dom";
 import oval6 from "../Saidbar/img/oval6.svg";
+import "./Biblet.scss"
 const Biblet = () => {
   const { data, search } = useContext(MyContext);
   const searchFunction = data
@@ -25,13 +26,13 @@ const Biblet = () => {
           />
         </Link>
         <div className='flex items-center pt-3'>
+          <div className="librBox">
           <img
-            className='bord block'
+            className='librImg'
             src={i.video.thumbnails[0].url}
-            width='35px'
-            height='45px'
             alt='img'
-          />
+            />
+            </div>
           <Link>{i.video.author.title}</Link>
         </div>
       </div>
