@@ -2,6 +2,26 @@
   width: 700px;
   height: 450px;
 }
+
+.iframeBox{
+  position: fixed;
+  left: calc(50% - 400px);
+}
+
+.useparBoxImg{
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 10px;
+}
+
+.useparCanalImg{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
 @media screen and (max-width: 1200px) {
 .positish {
   width: 700px;

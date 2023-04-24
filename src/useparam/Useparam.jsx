@@ -17,12 +17,11 @@ const Useparam = () => {
               .slice(0, 1)
               .map((i, el) => (
                 <div
-                  style={{ position: "relative" }}
+                  style={{ }}
                   key={el}
                   className="fixed flex justify-center bg-white   lg:start-96 top-50"
                 >
-                  <div
-                    style={{ position: "absolute", left: "calc(50% - 689px)" }}
+                  <div className="iframeBox"
                   >
                     <iframe
                       className="rounded positish"
@@ -30,17 +29,17 @@ const Useparam = () => {
                       title="YouTube video player"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     ></iframe>
-                    <h2 className="hidden sm:block text-start text-xl">
+                    <h2 className="hidden sm:block text-start text-xl font-semibold">
                       {i.video.title}
                     </h2>
                     <div className="flex items-center ">
+                      <div className="useparBoxImg">
                       <img
-                        className=" rounded-full block"
+                        className="useparCanalImg"
                         src={i.video.thumbnails[0].url}
                         alt="img"
-                        height="50px"
-                        width="55px"
                       />
+                        </div>
                       <div className="pe-10">
                         <Link className="sm:text-start text-slate-500 text-xl">
                           {i.video.author.title}
@@ -49,7 +48,7 @@ const Useparam = () => {
                           95,7 тыс. подписчиков
                         </p>
                       </div>
-                      <button className="btn text-white bg-black px-3 py-1 rounded">
+                      <button className="btn text-white bg-red-600 px-3 py-1 rounded">
                         подписаться
                       </button>
                     </div>
@@ -58,7 +57,7 @@ const Useparam = () => {
               ))}
           </div>
           <div className="pt-5">
-            {data.slice(25, 98).map((i, el) => (
+            {data.slice(16, 90).map((i, el) => (
               <div key={el} className="pb-10 flex justify-center">
                 <div className="">
                   <Link to={`/${i?.video.author.title}`} className={``}>

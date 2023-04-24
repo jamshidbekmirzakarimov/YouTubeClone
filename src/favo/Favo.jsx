@@ -15,8 +15,8 @@ const Favo = () => {
     })
     .slice(70, 90)
     .map((i, el) => (
-      <div key={el} className='pb-2'>
-        <div className=' '>
+      <div key={el} className='pb-2 flex'>
+        <div className='flex'>
           <div className='flex items-center justify-center'>
             <Link to={`/${i?.video.author.title}`}>
               <img

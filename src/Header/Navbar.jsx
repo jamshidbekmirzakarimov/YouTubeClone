@@ -38,8 +38,9 @@ const Navbar = () => {
           <MdVideoCall
             className=' nav__vedio none hidden md:block'
           />
-          <img className='nav__qund hidden md:block' src={path} alt='msv' />
-          <img className=' ps-1 ' src={userpic} alt='msv' />
+          <div className='nav__qund hidden md:block'>
+            <img className=' ps-1 ' src={userpic} alt='msv' />
+            </div>
         </div>
       </div>
     </div>
