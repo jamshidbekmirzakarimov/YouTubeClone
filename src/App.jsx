@@ -14,7 +14,11 @@ import Musc from "./music/Musc";
 import Favo from "./favo/Favo";
 import Like from "./like/Like";
 import "./App.css";
+
+
 function App() {
+
+
   return (
     <>
       <Navbar />
@@ -36,7 +40,10 @@ function App() {
           <Route path='/favo' element={<Favo />} />
           <Route path='/' element={<Card />} />
         </Routes>
+
       </div>
+       
+    
     </>
   );
 }

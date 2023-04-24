@@ -16,6 +16,9 @@ const Card = () => {
         return value;
       }
     })
+
+    
+
     .slice(0, 100)
     .map((i, el) => {
       return (

@@ -2,6 +2,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { MdVideoCall } from "react-icons/md";
 import { MyContext } from "../context/Context";
 import { FiSearch } from "react-icons/fi";
+import { NavLink, Link } from "react-router-dom";
 import userpic from "./imges/userpic.svg";
 import logo from "./imges/logo.svg";
 import path from "./imges/ui-11.svg";
@@ -23,7 +24,11 @@ const Navbar = () => {
             onClick={togleFun}
             className='nav__burger hidden md:block'
           />
-          <img className='px-0 pe-1 sm:px-10' src={logo} alt='logo' />
+          <NavLink to='/' className='pe-5 ps-5'>
+            <div className="">
+            <img className='' src={logo} alt='logo' />
+         </div>
+          </NavLink>
           <div className='nav__enner relative'>
             <input
               onChange={(e) => setSearch(e.target.value)}
