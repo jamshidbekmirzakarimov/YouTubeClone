@@ -23,25 +23,50 @@ const Saidbar = () => {
     <>
       {!togle ? (
         <div className={`minu`}>
-          <NavLink to='/' className=''>
-            <AiOutlineHome className='icons1' />
-            <span className='pb-3 bar__text block w-8'>Главная</span>
+          <div className="sideBar2">
+         <NavLink to='/' className='bar__link flex items-center'>
+            <AiOutlineHome className='icons' />
           </NavLink>
-          <NavLink to='shorts' className=''>
-            <img className='icons1' src={shorts} alt='img' />
-            <span className='pb-3 bar__text block w-8'>Shorts</span>
+
+          <NavLink to='/shorts' className='bar__link flex items-center'>
+            <DiCodeigniter className='icons' />
           </NavLink>
-          <NavLink to='/pat' className=''>
-            <MdSubscriptions className='icons1' />
-            <span className='pb-3 bar__text block w-8'>Подписки</span>
+
+          <NavLink to='/pat' className='bar__link flex items-center pb-16'>
+            <FiCopy className='icons' />
           </NavLink>
-          <NavLink to='/biblet' className=''>
-            <MdOutlineVideoLibrary className='icons1' />
-            <span className='pb-3 bar__text block w-8'>Библиотика</span>
+
+          <NavLink to='/biblet' className='bar__link flex items-center'>
+            <VscFileSubmodule className='icons' />
           </NavLink>
+
+          <NavLink to='/history' className='bar__link flex items-center'>
+            <FiFile className='icons' />
+          </NavLink>
+
+          <NavLink to='/watch' className='bar__link flex items-center'>
+            <SiTimescale className='icons' />
+          </NavLink>
+
+          <NavLink to='/favo' className='bar__link flex items-center'>
+            <BsStar className='icons' />
+          </NavLink>
+
+          <NavLink to='/like' className='bar__link flex items-center'>
+            <BiHeart className='icons' />
+          </NavLink>
+
+          <NavLink to='/music' className='bar__link flex items-center'>
+            <CiMusicNote1 className='icons' />
+          </NavLink>
+
+          <NavLink to='/games' className='bar__link flex items-center'>
+            <GrGamepad className='icons' />
+          </NavLink>
+          </div>
         </div>
       ) : (
-        <div className={`bar `}>
+          <div className={`bar `}>
           <NavLink to='/' className='bar__link flex items-center'>
             <AiOutlineHome className='icons' />
             <span className='bar__text block w-20'>Home</span>
@@ -91,10 +116,9 @@ const Saidbar = () => {
             <GrGamepad className='icons' />
             <span className='bar__text block w-20'>Games</span>
           </NavLink>
-
+          </div>
          
      
-        </div>
       )}
       <div className='bg-inherit '>
         <div className={`minu1 py-3   fixed px-3 `}>

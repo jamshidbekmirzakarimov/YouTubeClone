@@ -1,5 +1,5 @@
 import { GiHamburgerMenu } from "react-icons/gi";
-import { BsCameraReels } from "react-icons/bs";
+import { MdVideoCall } from "react-icons/md";
 import { MyContext } from "../context/Context";
 import { FiSearch } from "react-icons/fi";
 import userpic from "./imges/userpic.svg";
@@ -35,8 +35,7 @@ const Navbar = () => {
           </div>
         </div>
         <div className='flex items-center gap-5'>
-          <BsCameraReels
-            onClick={vediioFun}
+          <MdVideoCall
             className=' nav__vedio none hidden md:block'
           />
           <img className='nav__qund hidden md:block' src={path} alt='msv' />

@@ -6,13 +6,18 @@
   padding-right: 60px;
   background-color: #fff;
 }
+
+.sideBar2{
+  margin-top: 20px;
+}
+
 .minu1 {
   display: none;
 }
 .bar {
   position: sticky;
   top: 0;
-  height: 10vh;
+  height: 50vh;
   &__link {
     display: block;
     padding-bottom: 29px;
