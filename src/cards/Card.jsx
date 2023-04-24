@@ -19,7 +19,8 @@ const Card = () => {
     .slice(0, 100)
     .map((i, el) => {
       return (
-        <div key={el}>
+        <div className="cardContent">
+        <div key={el} className="cardContent">
           <div className='wrapper'>
             <Link to={`/${i?.video.author.title}`}>
               <img
@@ -45,7 +46,8 @@ const Card = () => {
             <p>80k views · 3 days ago</p>
             <p>Dollie Blair</p>
           </div>
-        </div>
+          </div>
+          </div>
       );
     });
   return (

@@ -12,12 +12,6 @@ import { GrGamepad } from "react-icons/gr";
 import { BiHeart } from "react-icons/bi";
 import { BsStar } from "react-icons/bs";
 import shorts from "./img/shorts.svg";
-import oval1 from "./img/oval1.svg";
-import oval2 from "./img/oval2.svg";
-import oval3 from "./img/oval3.svg";
-import oval4 from "./img/oval4.svg";
-import oval5 from "./img/oval5.svg";
-import oval6 from "./img/oval6.svg";
 import "./Saidbar.scss";
 const Saidbar = () => {
   const { togle } = useContext(MyContext);
@@ -98,41 +92,8 @@ const Saidbar = () => {
             <span className='bar__text block w-20'>Games</span>
           </NavLink>
 
-          <NavLink onClick={openFun} className='bar__link flex items-center'>
-            <FiChevronDown className='icons' />
-            <span className='bar__text block w-24'>Show more</span>
-          </NavLink>
-          {!open ? (
-            ""
-          ) : (
-            <div className={`sub absolute top-64 p-3 bg-slate-200 rounded  `}>
-              <p className='sub__text pb-5 w-24'>Subscriptions</p>
-              <div className='flex items-center'>
-                <img src={oval6} className='w-9' alt='oval' />
-                <Link className='w-32'>Gussie Singleton</Link>
-              </div>
-              <div className='flex items-center pt-4'>
-                <img src={oval5} className='w-9' alt='oval' />
-                <Link className='w-28'>Nora Francis</Link>
-              </div>
-              <div className='flex items-center pt-4'>
-                <img src={oval4} className='w-9' alt='oval' />
-                <Link className='w-28'>Belle Briggs</Link>
-              </div>
-              <div className='flex items-center pt-4'>
-                <img src={oval3} className='w-9' alt='oval' />
-                <Link className='w-28'>Eunice Cortez</Link>
-              </div>
-              <div className='flex items-center pt-4'>
-                <img src={oval2} className='w-9' alt='oval' />
-                <Link className='w-28'>Emma Hanson</Link>
-              </div>
-              <div className='flex items-center pt-4'>
-                <img src={oval1} className='w-9' alt='oval' />
-                <Link className='w-28'>Leah Berry</Link>
-              </div>
-            </div>
-          )}
+         
+     
         </div>
       )}
       <div className='bg-inherit '>

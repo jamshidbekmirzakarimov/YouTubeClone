@@ -3,7 +3,7 @@ import Useparam from "./useparam/Useparam";
 import History from "./history/History";
 import Saidbar from "./Saidbar/Saidbar";
 import Potpis from "./potpiska/Potpis";
-import Navbar from "./navbar/Navbar";
+import Navbar from "./Header/Navbar";
 import Shorts from "./shorts/Shorts";
 import Biblet from "./biblet/Biblet";
 import Vedio from "./vedio/Vedio";
